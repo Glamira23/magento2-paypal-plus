@@ -38,7 +38,7 @@ interface PPPPaymentInformationManagementInterface
     public function savePaymentInformation(
         $cartId,
         \Magento\Quote\Api\Data\PaymentInterface $paymentMethod,
-        \Magento\Quote\Api\Data\AddressInterface $billingAddress = null
+        ?\Magento\Quote\Api\Data\AddressInterface $billingAddress = null
     );
 
     /**
